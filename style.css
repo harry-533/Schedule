@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'premierLeague';
+    src: url('fonts/PremierLeague\ with\ LionNumbers.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'UCL';
+    src: url('fonts/Champions-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'F1';
+    src: url('fonts/Formula1-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'NFL';
+    src: url('fonts/Freshman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .top-header {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border: 1.5px solid grey;
+    border-bottom-style: none;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .schedule {
+    display: grid;
+    grid-template-columns: 1fr repeat(7, 4fr);
+    border: 1px solid grey;
+  }
+  
+  .header .time-slot {
+    height: 30px;
+  }
+  
+  .time-slot {
+    line-height: 60px;
+    font-size: 18px;
+  }
+  
+  .header, .body {
+    display: contents;
+  }
+  
+  .time-slot {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 56px;
+  }
+  
+  .day {
+    height: 50px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 25px;
+  }
+  
+  .day-column {
+    display: grid;
+    grid-template-rows: repeat(288, 6.5px);
+    border: 1px solid rgb(238, 238, 238);
+    position: relative;
+  }
+  
+  .event {
+    width: 94%;
+    margin: 2px;
+    padding: 0px 5px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .sport {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0px;
+    padding-bottom: 5px;
+    padding-top: 13.5px;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  .team {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+  }
+  
+  .score {
+    font-size: 30px;
+    border-radius: 5px;
+  }
+  
+  .home, .away {
+    width: 40%;
+    font-size: 20px;
+  }
+  
+  .vs {
+    width: 20%;
+  }
+  
+  .time {
+    border-bottom: 1px solid red;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+  }
+  
+  .info {
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    top: 100%;
+    left: 35%;
+    border: 1px solid #626262;
+    background-color: #dcdcdc;
+    padding: 20px;
+    display: none;
+    font-size: 20px;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .info:hover {
+    cursor:pointer;
+  }
+  
+  .pop-title {
+    padding-bottom: 10px;
+    font-size: 35px;
+  }
